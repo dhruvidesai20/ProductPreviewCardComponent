@@ -20,10 +20,6 @@
     -o-transform: translate(-50%, -50%);
 }
 
-.img2{
-    display: none;
-}
-
 .img1{
     position: absolute;
     height: 100%;
@@ -36,21 +32,28 @@
     -o-border-radius: 10px 0 0 10px;
 }
 
+.img2{
+    display: none;
+}
+
 .heading{
     font-family: 'Fraunces', serif;
     padding: 0 18% 0 7%;
     font-size: 2rem;
 }
+
 p{
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
     font-size: 0.9rem;
     padding: 0 7% 0 7%;
 }
+
 .price{
     color: hsl(158, 36%, 37%);
     padding-left: 12%;
 }
+
 .sm-heading1{
     padding-top: 10%;
     letter-spacing: 0.3rem;
@@ -103,6 +106,8 @@ p{
 
 }
 
+/* Footer */
+
 footer{
     position:absolute;
     bottom: 0;
@@ -110,10 +115,34 @@ footer{
     width: 100%;
 }
 
+/* Media Query */
+
 @media screen and (max-width: 940px){
+    
+    .body{
+        margin: 5%;
+    }
+    
+     .main-container{
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+    }
+
+    .container{
+        padding-right: 3%;
+    }
+    
     .img1{
         display: none;
     }
+    
     .img2{
         display: block;
         position: relative;
@@ -125,24 +154,6 @@ footer{
         -moz-border-radius: 10px 10px 0 0;
         -ms-border-radius: 10px 10px 0 0;
         -o-border-radius: 10px 10px 0 0;
-    }
-    .main-container{
-        width: 100%;
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0,0);
-        -webkit-transform: translate(0,0);
-        -moz-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-        -o-transform: translate(0,0);
-    }
-    .body{
-        margin: 5%;
-    }
-
-    .container{
-        padding-right: 3%;
     }
 
     footer{
